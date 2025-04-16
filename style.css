@@ -1,3 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     justify-content: space-around;
@@ -8,16 +14,16 @@
     width: 100%;
     }
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 .form-image img {
     height: 300px;
     width: 300px;
 }
+
+img {
+    border-radius: 300px;
+    border: solid 25px black;
+}
+
 .container2 {
     display: flex;
     justify-content: space-between;
@@ -29,11 +35,6 @@
     flex-direction: column;
 }
 
-img {
-    border-radius: 300px;
-    border: solid 25px black;
-}
-
 h1 {
     color: #fa0a3e;
 
@@ -43,23 +44,67 @@ h2 {
     color: #00ffff;
 }
 
-header {
-    display:block;
-    position: fixed;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #fa0a3e;
-    padding: 15px ;
-
-}
-
 .lista {
     display: flex;
-    background-color: aquamarine;
+    background-color: #00ffff;
     
 }
 
 .lista > li > a{
     text-decoration: none;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    display:block;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color:#00ffff ;
+    padding: 0px;
+}
+
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    color:hsl(0, 100%, 1%);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: darkcyan;
+    transform: scale(1.07);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+header .btn-contato button {
+    padding: 5px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: aqua;
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px #51f4f4;
 }
