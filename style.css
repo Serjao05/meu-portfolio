@@ -19,9 +19,14 @@
     width: 300px;
 }
 
-img {
+.image1 {
     border-radius: 300px;
     border: solid 25px black;
+}
+
+.logo1 {
+    height: 60px;
+    width: 80px;
 }
 
 .container2 {
