@@ -8,50 +8,96 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 325px;
+    padding: 15% 10% 10% 10%;
     background-color:black;
     height: 100%;
     width: 100%;
     }
 
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 15% 5% 10% 5%;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container3 {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 15% 5% 10% 5%;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container4 {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 15% 5% 10% 5%;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container5 {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 15% 5% 10% 5%;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
 .form-image img {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px; 
+   
 }
 
-.image1 {
-    border-radius: 300px;
-    border: solid 25px black;
+.form-image img {
+    position: relative;
+    z-index: 1;
+    animation: flutuar 2s ease-in-out infinite alternate;  
 }
+
+@keyframes flutuar {
+    0% {
+        top:0;
+    }
+    100% {
+        top:30px;
+        }
+}
+
 
 .logo1 {
     height: 60px;
     width: 80px;
 }
 
-.container2 {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 25% 0 25% 0;
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-}
-
 h1 {
     color: #fa0a3e;
-
+    font-size: 90px;
+    font-style: italic;
 }
 
 h2 {
-    color: #00ffff;
+    color: #2ba793;
 }
 
 .lista {
     display: flex;
-    background-color: #00ffff;
+    
     
 }
 
@@ -65,14 +111,14 @@ h2 {
 }
 
 header {
-    display:block;
+    display: block;
     position: fixed;
     display: flex;
     width: 100%;
-    background-color:#00ffff ;
-    padding: 0px;
+    background-color:#2ba793 ;
+    padding: 8px;
+    z-index: 1000;
 }
-
 
 header > .interface {
     display: flex;
@@ -83,10 +129,12 @@ header a {
     color:hsl(0, 100%, 1%);
     text-decoration: none;
     display: inline-block;
+    color: #fff;
+    font-size: 20px;
 }
 
 header a:hover {
-    color: darkcyan;
+    color: rgb(237, 249, 249);
     transform: scale(1.07);
     transition: .2s;
 }
@@ -101,15 +149,20 @@ header nav ul li {
 
 header .btn-contato button {
     padding: 5px 25px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     background-color: black;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
-    color: aqua;
+    color: #fff;
 }
 
 header .btn-contato button:hover {
-    box-shadow: 0px 0px 8px #51f4f4;
+    box-shadow: 0px 0px 8px #aeefe4;
+}
+
+h1 span {
+    color: #fff;
+    font-size: 80px;   
 }
