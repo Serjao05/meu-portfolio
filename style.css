@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15% 10% 10% 10%;
+    padding: 10% 10% 10% 10%;
     background-color:black;
     height: 100%;
     width: 100%;
@@ -16,9 +16,9 @@
 
     .container2 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items:center;
-        padding: 15% 5% 10% 5%;
+        padding: 10% 10% 10% 10%;
         background-color: black;
         height: 100%;
         width: 100%;
@@ -27,13 +27,12 @@
 
     .container3 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items:center;
-        padding: 15% 5% 10% 5%;
+        padding: 10% 5% 10% 5%;
         background-color: black;
         height: 100%;
         width: 100%;
-        flex-direction: column;
     }
 
     .container4 {
@@ -89,6 +88,8 @@ h1 {
     color: #fa0a3e;
     font-size: 90px;
     font-style: italic;
+    text-align: center;
+   
 }
 
 h2 {
@@ -165,4 +166,22 @@ header .btn-contato button:hover {
 h1 span {
     color: #fff;
     font-size: 80px;   
+}
+
+.container3 .habilidades-box {
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    align-items: center;
+    justify-content:center;
+   
+}
+
+.icones {
+    width: 250px;
+    height: 250px;
+    margin:10px;
+    display: flex;
+    padding: 50px;
+    
 }
