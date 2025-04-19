@@ -37,13 +37,12 @@
 
     .container4 {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items:center;
-        padding: 15% 5% 10% 5%;
+        padding: 10% 5% 10% 5%;
         background-color: black;
         height: 100%;
         width: 100%;
-        flex-direction: column;
     }
 
     .container5 {
@@ -136,8 +135,8 @@ header a {
 
 header a:hover {
     color: rgb(237, 249, 249);
-    transform: scale(1.07);
-    transition: .2s;
+    transform: scale(1.5);
+    transition: 2.50s;
 }
 
 header nav ul {
@@ -169,13 +168,49 @@ h1 span {
 }
 
 .container3 .habilidades-box {
-    color: #fff;
     display: inline-block;
     align-items: center;
     align-items: center;
     justify-content:center;
-   
+    border-radius: 20px;
+    margin: 30px 10px;
 }
+
+.container3 .habilidades-box:hover{
+    transform: scale(1,01);
+    box-shadow:1px 1px 3px 5px #2ba793;
+}
+
+.container4 .hobbies-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;
+    margin: 4px 4px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container4 .hobbies-box:hover{
+    transform: scale(1,01);
+    box-shadow:1px 1px 3px 5px #2ba793;
+}
+
+.container4 .hobbies-box2 {
+    display: inline-table;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;
+    margin: 0px 30px;
+    padding: 0% 10% 0% 10%;
+    
+}
+
+.container4 .hobbies-box2:hover{
+    transform: scale(1,1);
+    box-shadow:1px 1px 3px 5px #2ba793;
+}
+
 
 .icones {
     width: 250px;
@@ -183,5 +218,21 @@ h1 span {
     margin:10px;
     display: flex;
     padding: 50px;
-    
+}
+.icones2 {
+    width: 250px;
+    height: 175px;
+    margin: 0px;
+    display: flex;
+    padding: 45px;
+}
+
+.icones3 img{
+    width: 250px;
+    height: 175px;
+    margin: 0px;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
