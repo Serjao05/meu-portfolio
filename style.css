@@ -36,24 +36,24 @@
     }
 
     .container4 {
-        display: flex;
-        justify-content: space-around;
+        text-align: center;
+        justify-content: center;
         align-items:center;
-        padding: 10% 5% 10% 5%;
+        flex-direction: row;
         background-color: black;
         height: 100%;
         width: 100%;
+
     }
 
     .container5 {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items:center;
-        padding: 15% 5% 10% 5%;
+        flex-direction: row;
         background-color: black;
         height: 100%;
         width: 100%;
-        flex-direction: column;
     }
 
 .form-image img {
@@ -181,58 +181,52 @@ h1 span {
     box-shadow:1px 1px 3px 5px #2ba793;
 }
 
-.container4 .hobbies-box {
-    display: inline-flex;
-    align-items: center;
-    justify-content:center;
-    border-radius: 20px;
-    margin: 4px 4px;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.container4 .hobbies-box:hover{
-    transform: scale(1,01);
-    box-shadow:1px 1px 3px 5px #2ba793;
-}
-
-.container4 .hobbies-box2 {
-    display: inline-table;
-    align-items: center;
-    justify-content:center;
-    border-radius: 20px;
-    margin: 0px 30px;
-    padding: 0% 10% 0% 10%;
-    
-}
-
-.container4 .hobbies-box2:hover{
-    transform: scale(1,1);
-    box-shadow:1px 1px 3px 5px #2ba793;
-}
-
-
-.icones {
+.icones3{
     width: 250px;
     height: 250px;
     margin:10px;
     display: flex;
     padding: 50px;
 }
-.icones2 {
-    width: 250px;
-    height: 175px;
-    margin: 0px;
+
+.hobbies-box {
     display: flex;
-    padding: 45px;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+    
 }
 
-.icones3 img{
-    width: 250px;
-    height: 175px;
-    margin: 0px;
-    padding: 45px;
+.icones4 img{
+    width: 90px;
+    height: auto;
+    transition: transform 0.3s;
+   
+}
+
+.icones4:hover{
+    transform: scale(1,1);
+    box-shadow:1px 1px 3px 5px #2ba793;
+}
+
+
+.flex5 {
     display: flex;
+    flex-direction:row;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding: 35px 10px 25px 10px;
+}
+
+.icones5 {
+    width: 30vw;
+    max-width: 80px;
+    height: auto;
+}
+
+.icones5:hover{
+    transform: scale(1,1);
+    box-shadow:1px 1px 3px 5px #2ba793;
 }
