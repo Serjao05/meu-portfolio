@@ -220,7 +220,7 @@ header .btn-contato button:hover {
 
 h1 span {
     color: #fff;
-    font-size: 80px;   
+    font-size: 115px;   
 }
 
 .container3 .habilidades-box {
@@ -400,3 +400,5 @@ footer .line-footer h2{
 .container, .container3, .flex5, .hobbies-box {
     flex-wrap: wrap;
   }
+
+  
