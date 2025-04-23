@@ -7,17 +7,14 @@
   html, body {
     width: 100%;
     height: 100%;
-    overflow:visible;
+    overflow-x:hidden;
+    overflow-y:auto;
   }
 
   body, header, main, footer {
-    position: relative;
+    position:relative;
     z-index: 1;
 }
-
-  html {
-    scroll-behavior: smooth;
-  }
 
   #starfield {
     position:fixed;
@@ -34,20 +31,20 @@
     align-items: center;
     padding: 10% 10% 10% 10%;
     background-color: transparent;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     }
 
     .container2 {
         display: flex;
         justify-content:center;
         align-items:center;
-        padding: 10% 10% 25% 10%;
+        padding: 10% 10% 10% 10%;
         background-color: transparent;
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         flex-direction: column;
-        padding-top: 60px;     
+        
     }
 
     .container3 {
@@ -55,9 +52,9 @@
         justify-content: space-around;
         align-items:center;
         background-color: transparent;
-        padding: 10% 5% 10% 5%;
-        height: 100%;
-        width: 100%;
+        padding: 10% 10% 10% 10%;
+        height: 100vh;
+        width: 100vw;
     }
 
     .container4 {
@@ -67,9 +64,9 @@
         align-items:center;
         background-color: transparent;
         flex-direction: row;
-        padding: 15% 5% 25% 5%;
-        height: 100%;
-        width: 100%;
+        padding: 2rem;
+        height: 100vh;
+        width: 100vw;
     }
 
     .container5 {
@@ -78,22 +75,14 @@
         align-items:center;
         background-color: transparent;
         flex-direction: row;
-        height: 100%;
-        width: 100%;
-        padding: 15% 5% 25% 5%;
-    }
-
-    body {
-        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        padding: 2rem;
     }
 
 .form-image img {
     height: 350px;
     width: 350px; 
-   
-}
-
-.form-image img {
     position: relative;
     z-index: 1;
     animation: flutuar 2s ease-in-out infinite alternate;  
@@ -164,7 +153,6 @@ h2 {
 }
 
 header {
-    display: block;
     position: fixed;
     display: flex;
     width: 100%;
@@ -258,7 +246,7 @@ h1 span {
 .icones4 img{
     width: 95px;
     height: auto;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
    
 }
 
@@ -291,12 +279,14 @@ h1 span {
 }
 
 footer{
-    width: 100%;
+    width: 100vw;
     position: relative;
     bottom: 0; left: 0;
     background-color: #2ba793;
 }
 footer .interface{
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -400,5 +390,3 @@ footer .line-footer h2{
 .container, .container3, .flex5, .hobbies-box {
     flex-wrap: wrap;
   }
-
-  
